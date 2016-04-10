@@ -1,0 +1,7 @@
+master: localhost
+
+grains:
+  roles:
+    - apache
+
+failhard: True

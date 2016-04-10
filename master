@@ -1,0 +1,16 @@
+auto_accept: True
+
+hash_type: sha256
+
+file_roots:
+  base:
+    - /srv/salt/states
+
+pillar_roots:
+  base:
+    - /srv/salt/pillar
+
+extension_modules: /srv/salt/modules
+event_return: splunk_http
+returner.splunk_http.url: https://10.0.0.20:8088/services/collector/event
+returner.splunk_http.token: A2FBE1C6-CBF0-4D85-9345-EEBD0A5FF7DC
